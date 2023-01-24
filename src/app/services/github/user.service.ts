@@ -11,7 +11,7 @@ export class UserService {
   }
   async getUsers(searchValue: string) {
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     })
     const data = await octokit.request(`GET /search/users`, {q:searchValue})
     return  data
